@@ -10,6 +10,7 @@ import UserRoutes from "./app/routes/UserRoute.js";
 
 var corsOptions = {
     origin: "https://ruloans-crm-frontend.vercel.app/",
+    
 };
 
 const app = express();
@@ -20,7 +21,7 @@ const db = mongoose.connection;
 db.on('error', (error) => console.log(error));
 db.once('open', () => console.log('Database Connected...'));
 
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(UserRoutes);
 
