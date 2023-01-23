@@ -2,7 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
 import UserRoutes from "./app/routes/UserRoute.js";
-import dotenv from "dotenv"
+
 
 // var corsOptions = {
 //     origin: "http://localhost:8081",
