@@ -1,7 +1,7 @@
 import BankMis from "../models/BankMis.js";
 import VendorMis from "../models/VendorMis.js";
 import ProcessData from "../models/ProcessData.js";
-
+import DuplicateData from "../models/DuplicateData.js";
 
 // Upload CSV Only
 export const uploadBankCSV = async (req, res) => {
@@ -241,8 +241,8 @@ export const updateDupliacteValue = async (req, res) => {
 // Duplicate Data List
 export const getDuplicateDataList = async (req, res) => {
   try {
-    const users = await DuplicateData.find();
-    res.json(users);
+    const DuplicateDataList = await DuplicateData.find();
+    res.json(DuplicateDataList);
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
