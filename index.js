@@ -9,7 +9,7 @@ import UserRoutes from "./app/routes/UserRoute.js";
 // };
 
 var corsOptions = {
-    origin: "https://ruloans-crm-frontend.vercel.app/",
+    origin: "https://ruloans-crm-frontend.vercel.app",
     
 };
 
