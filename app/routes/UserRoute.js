@@ -20,7 +20,7 @@ import {
 } from "../controllers/UserController.js";
 
 const router = express.Router();
-const upload = multer({ dest: "uploads/" });
+const upload = multer({ dest: "/tmp/uploads/" });
 
 router.get('/', (req, res) => {
     res.json("Home Bakcend");
