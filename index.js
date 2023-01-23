@@ -4,8 +4,12 @@ import cors from "cors";
 import UserRoutes from "./app/routes/UserRoute.js";
 import dotenv from "dotenv"
 
+// var corsOptions = {
+//     origin: "http://localhost:8081",
+// };
+
 var corsOptions = {
-    origin: "http://localhost:8081",
+    origin: "https://ruloans-crm-frontend.vercel.app/",
 };
 
 const app = express();
