@@ -8,7 +8,14 @@ import {
     getVendorMisDataSingle,
     getProcessDataData,
     getProcessDataDataId,
-    getProcessTableData
+    getProcessTableData,
+    getProcessDataSingleId,
+    updateDupliacteValue,
+    getDuplicateDataList,
+    uploadBankCSV,
+    uploadVendorCSV,
+    updateBankUser,
+    deleteBankUser
 } from "../controllers/UserController.js";
 
 const router = express.Router();
