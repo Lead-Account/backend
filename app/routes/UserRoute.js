@@ -22,6 +22,16 @@ router.get('/processdatas', getProcessDataData);
 router.get('/processdata/:id', getProcessDataDataId);
 router.get('/getonevendor/:id', getVendorMisDataSingle);
 router.get('/processdatatable', getProcessTableData);
+router.get('/processCsvData/:id', getProcessDataSingleId);
+// Duplicate Data Routes
+router.get('/duplicatedata/:id', updateDupliacteValue);
+router.get('/duplicatedatalist', getDuplicateDataList);
+// Upload CSV
+router.post("/uploadBankCSV", upload.single("file"), uploadBankCSV)
+router.post("/uploadVendorCSV", upload.single("file"), uploadVendorCSV)
+router.put('/bankmis/:LoanNo', updateBankUser);
+router.delete('/bankmis/:id', deleteBankUser);
+
 // router.post('/users', saveUser);
 router.put('/vendormis/:LoanNo', updateUser);
 router.delete('/vendormis/:id', deleteUser);
